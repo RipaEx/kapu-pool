@@ -111,7 +111,7 @@ def pool ():
 		data = { "secret": conf['secret'], "amount": int (x['balance'] * 100000000), "recipientId": x['address'] }
 		if conf['secondsecret'] != None:
 			data['secondSecret'] = conf['secondsecret']		
-		f.write (json.dumps (data) + ',\n')
+		f.write (json.dumps (data))
 		index += 1
 	index = 0
 	f.write('],\n \"transactionsPending\": [\n')
