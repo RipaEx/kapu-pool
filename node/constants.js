@@ -10,7 +10,7 @@ const HEADER_PORT = 5500;
 const HEADER_VERSION = require('./package.json').version;
 const PRECISION = 8;
 const MESSAGE_1 = 'pool sharing: thank You for your vote';
-const MESSAGE_2 = 'pool sharing: RCH';
+const MESSAGE_2 = 'pool sharing: RCF';
 
 module.exports = {
     MAIN_NET_ENDPOINT: MAIN_NET_ENDPOINT,
