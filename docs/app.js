@@ -18,7 +18,7 @@ app.controller('indexCtrl', function($scope, $http) {
         }
     });
 
-    $http.get ('https://walletapi.kapu.one/api/delegates/get?username=gsilvestri').then (function (res) {
+    $http.get ('https://api2.ripaex.io/api/delegates/get?username=ripa_node_1').then (function (res) {
         $scope.delegate = res.data.delegate;
     });
 });

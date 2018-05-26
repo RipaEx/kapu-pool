@@ -1,8 +1,8 @@
 {
-	"coin": "KAPU",
-	"node": "https://walletapi.kapu.one",
-	"nodepay": "https://walletapi.kapu.one",
-	"pubkey": "03fee25affd221237cc4cb6fd11565fb425d46c34e2024cfb02e23c874ef33a646",
+	"coin": "XPX",
+	"node": "https://api2.ripaex.io",
+	"nodepay": "https://api2.ripaex.io",
+	"pubkey": "039d9f604f80e8c73e6ce83e91df5c94c84ab6fa326e1aea0fd11630ba3d9a15a1",
 	"percentage": 70,
 	"logfile": "poollogs.json",
 	"minpayout": 0.2,
@@ -10,7 +10,7 @@
 	"secondsecret": "",
 	"donations": {},
 	"donationspercentage": {
-		"KURXQmDcexsdVoFfqggkRSqqa6qjJqijPx": 2.5
+		"PXVTMqLFGJe82iofjYAoBHxVyDPPFb5ARP": 5.0
 	},
 	"skip": []
 }
