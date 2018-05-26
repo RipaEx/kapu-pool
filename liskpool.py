@@ -97,6 +97,7 @@ def pool ():
 		
 	f = open ('payments.json', 'w')
 	f.write('{\"transactions\": [\n')
+	index = 0
 	for x in topay:
 		if not (x['address'] in log['accounts']) and x['balance'] != 0.0:
 			log['accounts'][x['address']] = { 'pending': 0.0, 'received': 0.0 }
@@ -104,37 +105,52 @@ def pool ():
 		if x['balance'] < conf['minpayout'] and x['balance'] > 0.0:
 			log['accounts'][x['address']]['pending'] += x['balance']
 			continue
+		if index > 0: 
+			f.write (',\n')
 		log['accounts'][x['address']]['received'] += x['balance']	
 		data = { "secret": conf['secret'], "amount": int (x['balance'] * 100000000), "recipientId": x['address'] }
 		if conf['secondsecret'] != None:
 			data['secondSecret'] = conf['secondsecret']		
 		f.write (json.dumps (data) + ',\n')
+		index += 1
+	index = 0
 	f.write('],\n \"transactionsPending\": [\n')
 	for y in log['accounts']:
 		if log['accounts'][y]['pending'] > conf['minpayout']:
 			data = { "secret": conf['secret'], "amount": int (log['accounts'][y]['pending'] * 100000000), "recipientId": y }
 			if conf['secondsecret'] != None:
 				data['secondSecret'] = conf['secondsecret']			
-			f.write (json.dumps (data) + ',\n')
+			f.write (json.dumps (data))
+			if index < (len (log['accounts']) - 1):
+				f.write (',\n')
+			index += 1
 			log['accounts'][y]['received'] += log['accounts'][y]['pending']
 			log['accounts'][y]['pending'] = 0.0
 	f.write('],\n \"donations\": [\n');		
 	# Donations
+	index = 0
 	if 'donations' in conf:
 		for y in conf['donations']:
 			data = { "secret": conf['secret'], "amount": int (conf['donations'][y] * 100000000), "recipientId": y }
 			if conf['secondsecret'] != None:
 				data['secondSecret'] = conf['secondsecret']			
-			f.write (json.dumps (data) + ',\n')
+			f.write (json.dumps (data))
+			if index < (len (conf['donations']) - 1):
+				f.write (',\n')
+			index += 1
 	f.write('],\n \"donationsPercentage\": [\n');		
 	# Donation percentage
+	index = 0
 	if 'donationspercentage' in conf:
 		for y in conf['donationspercentage']:
 			am = (forged * conf['donationspercentage'][y]) / 100
 			data = { "secret": conf['secret'], "amount": int (am * 100000000), "recipientId": y }
 			if conf['secondsecret'] != None:
 				data['secondSecret'] = conf['secondsecret']			
-			f.write (json.dumps (data) + ',\n')
+			f.write (json.dumps (data))
+			if index < (len (conf['donationspercentage']) - 1):
+				f.write (',\n')
+			index += 1
 	f.write(']\n}\n')
 	f.close ()
 	

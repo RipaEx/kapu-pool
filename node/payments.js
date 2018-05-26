@@ -1,4 +1,4 @@
-var kapu = require('kapujs');
+var ripa = require('ripajs');
 var request = require('request');
 var phassphrases = require('./passphrases');
 var constants = require('./constants');
@@ -7,7 +7,7 @@ var logger = require('winston');
 logger.level = 'info';
 
 const ENDPOINT = constants.MAIN_NET_ENDPOINT;//constants.DEV_NET_ENDPOINT;//
-const SEND = true;
+const SEND = false;
 
 var callback = function (error, response, body) {
     if (error)
@@ -20,7 +20,7 @@ var passphrase = phassphrases.PASSPHRASE_MAINNET;
 var secondPassphrase = phassphrases.SECOND_PASSPHRASE_MAINNET;
 if (ENDPOINT === constants.DEV_NET_ENDPOINT) {
     payments = require('./paymentsDevNET');
-    kapu.crypto.setNetworkVersion(kapu.networks.devnet.pubKeyHash);
+    ripa.crypto.setNetworkVersion(ripa.networks.devnet.pubKeyHash);
     nethashExpected = constants.DEV_NET_NETHASH;
     passphrase = phassphrases.PASSPHRASE_DEVNET;
     secondPassphrase = phassphrases.SECOND_PASSPHRASE_DEVNET;
@@ -61,28 +61,28 @@ if (payments !== null) {
             //Send Transactions Pending
             for (var key in transactionsObject) {
                 if (transactionsObject[key].recipientId && transactionsObject[key].amount) {
-                    var transaction = kapu.transaction.createTransaction(transactionsObject[key].recipientId, transactionsObject[key].amount, constants.MESSAGE_1, passphrase, secondPassphrase);
+                    var transaction = ripa.transaction.createTransaction(transactionsObject[key].recipientId, transactionsObject[key].amount, constants.MESSAGE_1, passphrase, secondPassphrase);
                     transactionsRequest[transactionsRequestKey].push(transaction);
                 }
             }
             //Send Transactions Pending
             for (var key in transactionsPendingObject) {
                 if (transactionsPendingObject[key].recipientId && transactionsPendingObject[key].amount) {
-                    var transaction = kapu.transaction.createTransaction(transactionsPendingObject[key].recipientId, transactionsPendingObject[key].amount, constants.MESSAGE_1, passphrase, secondPassphrase);
+                    var transaction = ripa.transaction.createTransaction(transactionsPendingObject[key].recipientId, transactionsPendingObject[key].amount, constants.MESSAGE_1, passphrase, secondPassphrase);
                     transactionsRequest[transactionsRequestKey].push(transaction);
                 }
             }
             //Send Donations
             for (var key in donationsObject) {
                 if (donationsObject[key].recipientId && donationsObject[key].amount) {
-                    var transaction = kapu.transaction.createTransaction(donationsObject[key].recipientId, donationsObject[key].amount, constants.MESSAGE_2, passphrase, secondPassphrase);
+                    var transaction = ripa.transaction.createTransaction(donationsObject[key].recipientId, donationsObject[key].amount, constants.MESSAGE_2, passphrase, secondPassphrase);
                     transactionsRequest[transactionsRequestKey].push(transaction);
                 }
             }
             //Send Donations Percentage
             for (var key in donationsPercentageObject) {
                 if (donationsPercentageObject[key].recipientId && donationsPercentageObject[key].amount) {
-                    var transaction = kapu.transaction.createTransaction(donationsPercentageObject[key].recipientId, donationsPercentageObject[key].amount, constants.MESSAGE_2, passphrase, secondPassphrase);
+                    var transaction = ripa.transaction.createTransaction(donationsPercentageObject[key].recipientId, donationsPercentageObject[key].amount, constants.MESSAGE_2, passphrase, secondPassphrase);
                     transactionsRequest[transactionsRequestKey].push(transaction);
                 }
             }
