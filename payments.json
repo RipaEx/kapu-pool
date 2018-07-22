@@ -1,17 +1,33 @@
 {"transactions": [
-{"secret": "", "amount": 36644324, "recipientId": "PCEVa5MsNiP6pbmEVaWzgvYNxrXAUWhZoh", "secondSecret": ""},
-{"secret": "", "amount": 36644324, "recipientId": "PEgQektAWjN4Gb92AEjarFjMUbkjzpRKjG", "secondSecret": ""},
-{"secret": "", "amount": 74815496, "recipientId": "PHXBYxkzeCMvogwcWtfJQmTK5KZyZJtx8U", "secondSecret": ""},
-{"secret": "", "amount": 151157839, "recipientId": "PEswj68dxQD4iaST2rWfBHbvDqxgBFNstb", "secondSecret": ""},
-{"secret": "", "amount": 151157839, "recipientId": "PVnAo5G8MH893Qji1LP4Y5DeZRkkoTGS2R", "secondSecret": ""},
-{"secret": "", "amount": 254830741, "recipientId": "PTeHFX7DgMYotvx2h7Ri6zgKzcvSpGW8AT", "secondSecret": ""},
-{"secret": "", "amount": 638221989, "recipientId": "PXYtWJJttL8HfshPMAvVK3Ygf9txEtzLWx", "secondSecret": ""},
-{"secret": "", "amount": 1636932523, "recipientId": "PAFusZTmSoqLbyJDniPRUXkjvFCz2ekcnw", "secondSecret": ""},
-{"secret": "", "amount": 1572019594920, "recipientId": "PTUaick4CNFZXoZQ8kycTYbYbqBkUDUUeB", "secondSecret": ""}],
+{"secret": "", "amount": 44633744, "recipientId": "PBHd2CnfnSjAuXKEvj4QjypjBMDJXvL2Lk", "secondSecret": ""},
+{"secret": "", "amount": 45315233, "recipientId": "PEgQektAWjN4Gb92AEjarFjMUbkjzpRKjG", "secondSecret": ""},
+{"secret": "", "amount": 91127227, "recipientId": "PVMB1o1GHqZQE1Yh4Y7wLF3wNLLANeimAE", "secondSecret": ""},
+{"secret": "", "amount": 91127227, "recipientId": "PDPGmHXLW5FtXb6vmjsGunRd8yfFVPNQN7", "secondSecret": ""},
+{"secret": "", "amount": 91127227, "recipientId": "PMZhiBP8YaAjP4urfCvKiGFhLg97GHgdFp", "secondSecret": ""},
+{"secret": "", "amount": 91127227, "recipientId": "PJbxMo4erHGNweribtk7uuJqUXfkWuajix", "secondSecret": ""},
+{"secret": "", "amount": 91127227, "recipientId": "PKZpe184oWS2cKyLGyCpgKbypYe55w3f3R", "secondSecret": ""},
+{"secret": "", "amount": 91127227, "recipientId": "PQ52qYdQtFa61bGGa5N2Rj7knSbkjqDDr8", "secondSecret": ""},
+{"secret": "", "amount": 92518600, "recipientId": "PHXBYxkzeCMvogwcWtfJQmTK5KZyZJtx8U", "secondSecret": ""},
+{"secret": "", "amount": 186925336, "recipientId": "PVnAo5G8MH893Qji1LP4Y5DeZRkkoTGS2R", "secondSecret": ""},
+{"secret": "", "amount": 323594644, "recipientId": "PGXtDp4D3dy2KuAXjqZjdJmMU5AVb64RXQ", "secondSecret": ""},
+{"secret": "", "amount": 351490734, "recipientId": "PWj23SNTqapB5TXzriteYDou7yScZyeeoV", "secondSecret": ""},
+{"secret": "", "amount": 351490734, "recipientId": "PFM7vhA1e8Tzk6GRidrqsHZiGigRxGWgj2", "secondSecret": ""},
+{"secret": "", "amount": 370769617, "recipientId": "PCEVa5MsNiP6pbmEVaWzgvYNxrXAUWhZoh", "secondSecret": ""},
+{"secret": "", "amount": 397984218, "recipientId": "PW5Z9fcWt4E2EhFeQ173y1pwfMZRfabaJx", "secondSecret": ""},
+{"secret": "", "amount": 556062062, "recipientId": "PTvfiRRzGyzSaiG6gZxopjgcgds8kRK4wt", "secondSecret": ""},
+{"secret": "", "amount": 640584067, "recipientId": "PTeHFX7DgMYotvx2h7Ri6zgKzcvSpGW8AT", "secondSecret": ""},
+{"secret": "", "amount": 698353654, "recipientId": "PEswj68dxQD4iaST2rWfBHbvDqxgBFNstb", "secondSecret": ""},
+{"secret": "", "amount": 2627010741, "recipientId": "PAFusZTmSoqLbyJDniPRUXkjvFCz2ekcnw", "secondSecret": ""},
+{"secret": "", "amount": 3345671069, "recipientId": "PQmi9CQgMNsHomBKC7aygBhwsZ6HXmsU92", "secondSecret": ""},
+{"secret": "", "amount": 3345671069, "recipientId": "PNJRyDXgHqqAbFvnGFUnfqjWHndgSUwfXW", "secondSecret": ""},
+{"secret": "", "amount": 3392164552, "recipientId": "PSH1yb1e3boam2JoWko4MXb7umdqY7QhzA", "secondSecret": ""},
+{"secret": "", "amount": 4150938202, "recipientId": "PV2ETqJdj6rYECBxmZBGZfh1TLDCgEsmUU", "secondSecret": ""},
+{"secret": "", "amount": 18595533641, "recipientId": "PC7CFZCedS1MjPmJCif2CykBs4FEMDdqj9", "secondSecret": ""},
+{"secret": "", "amount": 1638256524709, "recipientId": "PTUaick4CNFZXoZQ8kycTYbYbqBkUDUUeB", "secondSecret": ""}],
  "transactionsPending": [
 ],
  "donations": [
 ],
  "donationsPercentage": [
-{"secret": "", "amount": 78750000000, "recipientId": "PXVTMqLFGJe82iofjYAoBHxVyDPPFb5ARP", "secondSecret": ""}]
+{"secret": "", "amount": 83916000000, "recipientId": "PXVTMqLFGJe82iofjYAoBHxVyDPPFb5ARP", "secondSecret": ""}]
 }
