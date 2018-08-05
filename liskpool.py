@@ -38,7 +38,7 @@ def saveLog (log):
 
 
 def estimatePayouts (log):
-	if conf['coin'].lower () == 'ark':
+	if conf['coin'].lower () == 'xpx':
 		uri = conf['node'] + '/api/delegates/forging/getForgedByAccount?generatorPublicKey=' + conf['pubkey']
 		d = requests.get (uri)
 		lf = log['lastforged']
