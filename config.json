@@ -1,7 +1,7 @@
 {
 	"coin": "XPX",
-	"node": "https://api2.ripaex.io",
-	"nodepay": "https://api2.ripaex.io",
+	"node": "https://api.ripaex.io",
+	"nodepay": "https://api.ripaex.io",
 	"pubkey": "039d9f604f80e8c73e6ce83e91df5c94c84ab6fa326e1aea0fd11630ba3d9a15a1",
 	"percentage": 95,
 	"logfile": "poollogs.json",
