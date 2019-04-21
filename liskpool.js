@@ -92,11 +92,11 @@ async function broadcastPayments(_config, _payments, _passphrases, _passphrasesF
                     json: transactionsRequest,
                     method: 'POST',
                     headers: {
-                        'Content-Type': _config.nethash.HEADER_CONTENT_TYPE,
-                        'os': _config.nethash.HEADER_OS,
+                        'Content-Type': _config.HEADER_CONTENT_TYPE,
+                        'os': _config.HEADER_OS,
                         'version': HEADER_VERSION,
-                        'port': _config.nethash.HEADER_PORT,
-                        'nethash': _config.nethash
+                        'port': _config.HEADER_PORT,
+                        'nethash': _config.MAIN_NET_NETHASH
                     }
                 });
 				logger.info('Transactions Response: ' + JSON.stringify(transactionsResponse, null, 4));
