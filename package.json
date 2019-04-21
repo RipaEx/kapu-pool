@@ -11,11 +11,13 @@
     "ripajs": "git://github.com/RipaEx/ripa-js.git#master",
     "kapuwrapper": "^0.1.2",
     "request": "^2.83.0",
-    "winston": "^2.4.0"
+    "request-promise": "^4.2.0",
+    "winston": "^2.4.0",
+    "readline-sync": "^1.4.9"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node payments.js",
+    "start": "node liskpool.js",
     "test": "test"
   },
   "repository": {

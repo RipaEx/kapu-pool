@@ -1,16 +1,24 @@
 {
 	"coin": "XPX",
 	"node": "https://api.ripaex.io",
-	"nodepay": "https://api.ripaex.io",
+	"MAIN_NET_NETHASH": "bee1634649fc6a759e5fdb8f3c4bcb4b5189c1f2a6b48284a6445f3f09db844e",
 	"pubkey": "039d9f604f80e8c73e6ce83e91df5c94c84ab6fa326e1aea0fd11630ba3d9a15a1",
 	"percentage": 95,
-	"logfile": "poollogs.json",
+	"logfile": "docs/poollogs.json",
+	"paymentsFile": "payments.json",
 	"minpayout": 0.2,
-	"secret": "",
+	"secret": "passphrases.json",
 	"secondsecret": "",
 	"donations": {},
 	"donationspercentage": {
 		"PXVTMqLFGJe82iofjYAoBHxVyDPPFb5ARP": 5.0
 	},
-	"skip": []
+	"skip": [],
+	"GET_NET_HASH_ENDPOINT": "/api/blocks/getNethash",
+	"TRANSACTIONS_ENDPOINT": "/api/v2/transactions",
+	"HEADER_CONTENT_TYPE": "application/json",
+	"HEADER_OS": "ripa-pool",
+	"HEADER_PORT": 5502,
+	"MESSAGE_1": "pool sharing - 95%: www.cryptdelegate.com",
+	"MESSAGE_2": "pool sharing: RCF"
 }

@@ -1,0 +1,16 @@
+{
+	"coin": "TST",
+	"node": "https://api.test.io",
+	"nodepay": "https://api.test.io",
+	"pubkey": "039d9test9a15a1",
+	"percentage": 95,
+	"logfile": "poollogs2.json",
+	"minpayout": 0.2,
+	"secret": "",
+	"secondsecret": "",
+	"donations": {},
+	"donationspercentage": {
+		"PXVTMqLFGJe82iofjYAoBHxVyDPPFb5ARP": 5.0
+	},
+	"skip": []
+}
