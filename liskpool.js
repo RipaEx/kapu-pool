@@ -48,28 +48,28 @@ async function broadcastPayments(_config, _payments, _passphrases, _passphrasesF
 			//Create Transactions
 			for (var key in transactionsObject) {
 				if (transactionsObject[key].recipientId && transactionsObject[key].amount) {
-					var transaction = ripa.transaction.createTransaction(transactionsObject[key].recipientId, transactionsObject[key].amount, _payments.MESSAGE_1, _passphrases.PASSPHRASE, _passphrases.SECOND_PASSPHRASE);
+					var transaction = ripa.transaction.createTransaction(transactionsObject[key].recipientId, transactionsObject[key].amount, _config.MESSAGE_1, _passphrases.PASSPHRASE, _passphrases.SECOND_PASSPHRASE);
 					transactionsRequest[transactionsRequestKey].push(transaction);
 				}
 			}
 			//Create Transactions Pending
 			for (var key in transactionsPendingObject) {
 				if (transactionsPendingObject[key].recipientId && transactionsPendingObject[key].amount) {
-					var transaction = ripa.transaction.createTransaction(transactionsPendingObject[key].recipientId, transactionsPendingObject[key].amount, _payments.MESSAGE_1, _passphrases.PASSPHRASE, _passphrases.SECOND_PASSPHRASE);
+					var transaction = ripa.transaction.createTransaction(transactionsPendingObject[key].recipientId, transactionsPendingObject[key].amount, _config.MESSAGE_1, _passphrases.PASSPHRASE, _passphrases.SECOND_PASSPHRASE);
 					transactionsRequest[transactionsRequestKey].push(transaction);
 				}
 			}
 			//Create Donations
 			for (var key in donationsObject) {
 				if (donationsObject[key].recipientId && donationsObject[key].amount) {
-					var transaction = ripa.transaction.createTransaction(donationsObject[key].recipientId, donationsObject[key].amount, _payments.MESSAGE_2, _passphrases.PASSPHRASE, _passphrases.SECOND_PASSPHRASE);
+					var transaction = ripa.transaction.createTransaction(donationsObject[key].recipientId, donationsObject[key].amount, _config.MESSAGE_2, _passphrases.PASSPHRASE, _passphrases.SECOND_PASSPHRASE);
 					transactionsRequest[transactionsRequestKey].push(transaction);
 				}
 			}
 			//Create Donations Percentage
 			for (var key in donationsPercentageObject) {
 				if (donationsPercentageObject[key].recipientId && donationsPercentageObject[key].amount) {
-					var transaction = ripa.transaction.createTransaction(donationsPercentageObject[key].recipientId, donationsPercentageObject[key].amount, _payments.MESSAGE_2, _passphrases.PASSPHRASE, _passphrases.SECOND_PASSPHRASE);
+					var transaction = ripa.transaction.createTransaction(donationsPercentageObject[key].recipientId, donationsPercentageObject[key].amount, _config.MESSAGE_2, _passphrases.PASSPHRASE, _passphrases.SECOND_PASSPHRASE);
 					transactionsRequest[transactionsRequestKey].push(transaction);
 				}
 			}
@@ -183,26 +183,26 @@ async function pool() {
 					log.accounts[address].pending += balance;
 				} else {
 					log.accounts[address].received += balance;
-					payments.transactions.push({ recipientId: address, amount: balance * 100000000 });
+					payments.transactions.push({ recipientId: address, amount: parseInt(balance * 100000000) });
 				}
 			}
 			for (var y in log.accounts) {
 				var amountPending = log.accounts[y].pending;
 				if (amountPending > config.minpayout) {
-					payments.transactionsPending.push({ recipientId: y, amount: amountPending * 100000000 });
+					payments.transactionsPending.push({ recipientId: y, amount: parseInt(amountPending * 100000000) });
 					log.accounts[y].received += amountPending;
 					log.accounts[y].pending = 0.0;
 				}
 			}
 			if (config.donations) {
 				for (var y in config.donations) {
-					payments.donations.push({ recipientId: y, amount: log.accounts[y] * 100000000 });
+					payments.donations.push({ recipientId: y, amount: parseInt(log.accounts[y] * 100000000) });
 				}
 			}
 			if (config.donationspercentage) {
 				for (var y in config.donationspercentage) {
 					var am = forged * config.donationspercentage[y] / 100;
-					payments.donationsPercentage.push({ recipientId: y, amount: am * 100000000 });
+					payments.donationsPercentage.push({ recipientId: y, amount: parseInt(am * 100000000) });
 				}
 			}
 			log.lastpayout = Math.floor(Date.now() / 1000);
