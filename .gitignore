@@ -4,3 +4,4 @@ node/passphrases.js
 node_modules/
 package-lock.json
 passphrases.json
+.vs/
