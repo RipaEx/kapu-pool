@@ -2,168 +2,167 @@
     "transactions": [
         {
             "recipientId": "PXCHYwV1ccH96K4GuhH9UErnKRQvHFiJmf",
-            "amount": 2436822578
+            "amount": 5051091832
         },
         {
             "recipientId": "PV2ETqJdj6rYECBxmZBGZfh1TLDCgEsmUU",
-            "amount": 12561637948
+            "amount": 26038000227
         },
         {
             "recipientId": "PDdNEveZG7AoygEBM57BJfaMCz8WYCYaEp",
-            "amount": 39224793656
+            "amount": 81305892619
         },
         {
             "recipientId": "PPvFaWYKzW6iErPKYEtpSxXGPGJNTsXMRm",
-            "amount": 2645909674
+            "amount": 5484491511
         },
         {
             "recipientId": "PU1i4d3xq6h9PjdHp1ErMQRXjdKfyMzazU",
-            "amount": 11721508986
+            "amount": 24296565058
         },
         {
             "recipientId": "PQceMM9BNrdD4Xh29sQGPQfScktBhbChsD",
-            "amount": 738782497
+            "amount": 1531362305
         },
         {
             "recipientId": "PLkkhKbXEGrrxoyPZp6jaGbSjchaRsxwTC",
-            "amount": 988432634
+            "amount": 2048841819
         },
         {
             "recipientId": "PBHd2CnfnSjAuXKEvj4QjypjBMDJXvL2Lk",
-            "amount": 20562264
+            "amount": 42621849
         },
         {
             "recipientId": "PAA7tJ3vkkgrdvMpMRubQGJ9hZmkPDSjE5",
-            "amount": 7805844808
+            "amount": 16180102447
         },
         {
             "recipientId": "P9uUEu6MJaZYEFcFkMiZLqt1PrhHyqwYRA",
-            "amount": 11057324327
+            "amount": 22919830560
         },
         {
             "recipientId": "PAFusZTmSoqLbyJDniPRUXkjvFCz2ekcnw",
-            "amount": 102720234
+            "amount": 212920441
         },
         {
             "recipientId": "PM9q1rgMk8WMjJdyD3CR5EeaTVwRFwcfL4",
-            "amount": 68041864
+            "amount": 141038461
         },
         {
             "recipientId": "PTMg8foxU4TRXQrKxL7zLCEvA1fyBchbs5",
-            "amount": 12364459701
+            "amount": 25629285435
         },
         {
             "recipientId": "PUtBT4CuG1tMkt4PtiLD4fWD3pa8CPzpDk",
-            "amount": 57855924
+            "amount": 119924852
         },
         {
             "recipientId": "P9Xwvi1BThPipSC95ocyyfCYu5gCqF8kZW",
-            "amount": 586526085
+            "amount": 1215762339
+        },
+        {
+            "recipientId": "PCEVa5MsNiP6pbmEVaWzgvYNxrXAUWhZoh",
+            "amount": 26562069
         },
         {
             "recipientId": "PDd2rbavb7wuWASTotLUTGJuUP19JhFnSw",
-            "amount": 415371322
+            "amount": 860989517
         },
         {
             "recipientId": "PKRfnBVEJinVjdRFX7VVwnjvdxRGB3BMpn",
-            "amount": 1196075898
+            "amount": 2479248696
         },
         {
             "recipientId": "PTUaick4CNFZXoZQ8kycTYbYbqBkUDUUeB",
-            "amount": 3284271030
+            "amount": 6981527490
         },
         {
             "recipientId": "PBrJJ2Jn8hiEoAjL8FRNmTvJ1tKrdH72iU",
-            "amount": 800754993
-        },
-        {
-            "recipientId": "PH884N6893TFo1USwN2D4q5g6HrhSDo5PP",
-            "amount": 690801206
-        },
-        {
-            "recipientId": "PCFeTu1NZvfFqGriWiGC2DwTMh2WqiGZxs",
-            "amount": 137075799
-        },
-        {
-            "recipientId": "PDPGmHXLW5FtXb6vmjsGunRd8yfFVPNQN7",
-            "amount": 33480425
-        },
-        {
-            "recipientId": "PEmbrgAfNYFK7NrvvZw2m5YT2i4MqkgQoA",
-            "amount": 375597482
-        },
-        {
-            "recipientId": "PE8iX3o9waXgaeCUZkN1Urmr5emVw75JV7",
-            "amount": 627550262
-        },
-        {
-            "recipientId": "PQeXo37i6uYDnndPEq6u4GWeD5XZvJ4NyN",
-            "amount": 6925780780
-        },
-        {
-            "recipientId": "PC1LWuLz66DiByJzJBAzD1wH56EZK8CH76",
-            "amount": 670188012
-        },
-        {
-            "recipientId": "P92Ygj2QGRy5jhEGiQf6x424CuxF7CW7Ue",
-            "amount": 67985398
-        },
-        {
-            "recipientId": "PT2tpjj6Q4nN4vGacTRsGZ4E87fk6ScWHu",
-            "amount": 2947994452
-        },
-        {
-            "recipientId": "PJG5Zc61XxSRTmKfwucrpEug8FMYv5J3q2",
-            "amount": 11785322645
-        },
-        {
-            "recipientId": "PB7qwNYXAKsszofyWHfMuA3CagpHkR6DYV",
-            "amount": 229248338
-        },
-        {
-            "recipientId": "PTeHFX7DgMYotvx2h7Ri6zgKzcvSpGW8AT",
-            "amount": 1884057392
-        },
-        {
-            "recipientId": "PLobD8VnLk7CwomLQDJdUw1SMuQ1Zt3KXM",
-            "amount": 3129147506
-        },
-        {
-            "recipientId": "PF4CbZp8NpScPFBYLDkgUNwizNPr4pCvfF",
-            "amount": 84178199
-        },
-        {
-            "recipientId": "PSU3FJzbE6jWbgPJvFxiv2mFkajYwctPTp",
-            "amount": 67985398
-        },
-        {
-            "recipientId": "PNsizBBX1VocAXJPpPFhovbWNWyoVVKgF7",
-            "amount": 686327696
-        },
-        {
-            "recipientId": "PBqoTZiQwQyGfZxG1xeNMyk7MCTfiS7je9",
-            "amount": 27109503
-        }
-    ],
-    "transactionsPending": [
-        {
-            "recipientId": "PCEVa5MsNiP6pbmEVaWzgvYNxrXAUWhZoh",
-            "amount": 26131300
-        },
-        {
-            "recipientId": "PVnAo5G8MH893Qji1LP4Y5DeZRkkoTGS2R",
-            "amount": 26364070
+            "amount": 1659820064
         },
         {
             "recipientId": "PQXCPZLVnfGCFosB1TS4sqYZtF9vYx6CsK",
-            "amount": 36323138
+            "amount": 36921918
+        },
+        {
+            "recipientId": "PH884N6893TFo1USwN2D4q5g6HrhSDo5PP",
+            "amount": 1431905778
+        },
+        {
+            "recipientId": "PCFeTu1NZvfFqGriWiGC2DwTMh2WqiGZxs",
+            "amount": 284133304
+        },
+        {
+            "recipientId": "PDPGmHXLW5FtXb6vmjsGunRd8yfFVPNQN7",
+            "amount": 69398858
+        },
+        {
+            "recipientId": "PEmbrgAfNYFK7NrvvZw2m5YT2i4MqkgQoA",
+            "amount": 778545550
+        },
+        {
+            "recipientId": "PE8iX3o9waXgaeCUZkN1Urmr5emVw75JV7",
+            "amount": 1300798028
+        },
+        {
+            "recipientId": "PQeXo37i6uYDnndPEq6u4GWeD5XZvJ4NyN",
+            "amount": 14355889119
+        },
+        {
+            "recipientId": "PC1LWuLz66DiByJzJBAzD1wH56EZK8CH76",
+            "amount": 1389178362
+        },
+        {
+            "recipientId": "P92Ygj2QGRy5jhEGiQf6x424CuxF7CW7Ue",
+            "amount": 140921417
+        },
+        {
+            "recipientId": "PT2tpjj6Q4nN4vGacTRsGZ4E87fk6ScWHu",
+            "amount": 6110658541
+        },
+        {
+            "recipientId": "PJG5Zc61XxSRTmKfwucrpEug8FMYv5J3q2",
+            "amount": 24428839214
+        },
+        {
+            "recipientId": "PB7qwNYXAKsszofyWHfMuA3CagpHkR6DYV",
+            "amount": 475190282
+        },
+        {
+            "recipientId": "PTeHFX7DgMYotvx2h7Ri6zgKzcvSpGW8AT",
+            "amount": 3905309722
+        },
+        {
+            "recipientId": "PLobD8VnLk7CwomLQDJdUw1SMuQ1Zt3KXM",
+            "amount": 6486156010
+        },
+        {
+            "recipientId": "PF4CbZp8NpScPFBYLDkgUNwizNPr4pCvfF",
+            "amount": 174486159
+        },
+        {
+            "recipientId": "PSU3FJzbE6jWbgPJvFxiv2mFkajYwctPTp",
+            "amount": 140921417
+        },
+        {
+            "recipientId": "PNsizBBX1VocAXJPpPFhovbWNWyoVVKgF7",
+            "amount": 1422633003
+        },
+        {
+            "recipientId": "PBqoTZiQwQyGfZxG1xeNMyk7MCTfiS7je9",
+            "amount": 56193089
+        },
+        {
+            "recipientId": "PJCJmPLr1qnp3YwbXwGSxQc4qvCZYgsyeg",
+            "amount": 31108944
         }
     ],
+    "transactionsPending": [],
     "donations": [],
     "donationsPercentage": [
         {
             "recipientId": "PXVTMqLFGJe82iofjYAoBHxVyDPPFb5ARP",
-            "amount": 6925500000
+            "amount": 14363999999
         }
     ]
 }
